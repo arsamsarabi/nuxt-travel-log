@@ -14,6 +14,10 @@ export default withNuxt(antfu({
     semi: true,
     quotes: "double",
   },
+
+  ignores: [
+    ".pnpm-store/**",
+  ],
 }, {
   rules: {
     "ts/consistent-type-definitions": ["error", "type"],
